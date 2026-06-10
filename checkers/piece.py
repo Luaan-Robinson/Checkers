@@ -32,7 +32,13 @@ class Piece:
         radius = SQUARE_SIZE//2 - self.PADDING
         pygame.draw.circle(win, GREY, (self.x, self.y), radius + self.OUTLINE)   # larger circle
         pygame.draw.circle(win, self.color, (self.x, self.y), radius)     # smaller circle inside of larger one, making it look like it has a border
+        if self.king:
+            win.blit(CROWN, (self.x - CROWN.get_width()//2, self.y - CROWN.get_height()//2))
 
+    def move(self, row, col):
+        self.row = row
+        self.col = col
+        self.calc_pos()
 
     # custom object representation for debugging
     def __repre__(self):

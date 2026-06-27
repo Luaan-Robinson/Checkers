@@ -29,8 +29,11 @@ def main():
               if event.type == pygame.MOUSEBUTTONDOWN:
                    pos = pygame.mouse.get_pos()
                    row, col = get_row_col_from_mouse(pos)
-                   piece = board.get_piece(row, col)
-                   board.move(piece, 4,3)
+                   if game.turn == RED:
+                       game.select(row, col)
+
+                  # piece = board.get_piece(row, col)
+                  # board.move(piece, 4,3)
               
          game.update()
              

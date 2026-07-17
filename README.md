@@ -4,11 +4,11 @@ A classic checkers game with an AI opponent powered by the Minimax algorithm.
 
 ## Screenshots
 
-<img src="screenshots/gameplay1.png" alt="Gameplay Screenshot 1" width="540"/>
+<img src="screenshots/gameplay1.png" alt="Gameplay Screenshot 1" width="570"/>
 
 <br/>
 
-<img src="screenshots/gameplay2.png" alt="Gameplay Screenshot 2" width="540"/>
+<img src="screenshots/gameplay2.png" alt="Gameplay Screenshot 2" width="570"/>
 
 ## How to Play
 
